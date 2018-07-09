@@ -1,1 +1,107 @@
+/* ===========================================================  Styles for general elements ======================================================== */
+body {
+  background: #F2F3F4;
+}
+form {
+  border: 1px solid lightgray;
+  padding: 20px;
+  border-radius: 5px;
+  background: white;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: darkgreen;
+  font-weight: bold;
+}
 
+/* ===========================================================  Styles for forms ======================================================== */
+
+input,
+input[type="radio"] + label,
+input[type="checkbox"] + label:before,
+select option,
+select {
+  width: 100%;
+  line-height: 1em;
+  padding: 0.6em;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+  font-size: 14pt;
+}
+input:focus {
+  outline: 0;
+  border-color: #64ac15;
+}
+input:focus + .input-icon i {
+  color: #7ed321;
+}
+input:focus + .input-icon:after {
+  border-right-color: #7ed321;
+}
+input[type="submit"] {
+  background: #64ac15;
+  color: white;
+  font-size: 14pt;
+  padding: 0.6em;
+  line-height: 1;
+}
+input[type="submit"]:hover {
+  background: darkgreen;
+  color: white;
+  font-weight: bold;
+}
+.input-group {
+  width: 100%;
+  margin-bottom: 1em;
+  zoom: 1;
+}
+.input-group:before,
+.input-group:after {
+  content: "";
+  display: table;
+}
+.input-group:after {
+  clear: both;
+}
+.input-group-icon {
+  position: relative;
+}
+.input-group-icon input, .input-group-icon select {
+  padding-left: 2.8em;
+}
+.input-group-icon .input-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3.4em;
+  height: 3.4em;
+  line-height: 3.4em;
+  text-align: center;
+  pointer-events: none;
+}
+.input-group-icon .input-icon:after {
+  position: absolute;
+  top: 0.6em;
+  bottom: 0.6em;
+  left: 3.4em;
+  display: block;
+  border-right: 1px solid #e5e5e5;
+  content: "";
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.input-group-icon .input-icon i {
+  -webkit-transition: 0.35s ease-in-out;
+  -moz-transition: 0.35s ease-in-out;
+  -o-transition: 0.35s ease-in-out;
+  transition: 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
